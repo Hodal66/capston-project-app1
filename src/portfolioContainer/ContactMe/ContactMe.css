@@ -1,0 +1,135 @@
+.ContactContainer{
+    background-color: #112;
+    height: 75vh;
+    border: 2px solid #222;
+    border-radius: 20px;
+    margin: 4rem 8rem;
+ 
+    display: flex;
+    flex-direction: row;
+    
+
+}
+.socialMedia{
+    padding: 20px 20px 40px 0px;
+    margin: 20px 20px;
+}
+.socialMedia a{
+    padding: 2px 10px 10px 0px;
+    font-size: 30px;
+    color: #ddd;
+}.socialMedia a:hover{
+    color: orangered;
+    transform:scale(1.2)
+}
+.your-email{
+    padding:10px;
+    font-size: small;
+    color: #ddd;
+    word-spacing: 2px;
+    letter-spacing: 4px;
+}
+.myImage{
+    background-image: url("../../Assets/images/mailz.jpeg");
+    height: 25vh;
+    width: 38vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 2%;
+    border-radius: 10px;
+}
+
+.GetInTouch{
+
+height: 40%;
+width: 50%;
+margin: 20px;
+border-radius: 20px;
+
+}
+.GetInTouch h1{
+    margin-left: 10px;
+    font-size: 2rem;
+    color: #ddd;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.FormContainer{
+    background-color:#112;
+height: 100%;
+width: 50%;
+padding: 10px;
+border-radius: 20px;
+
+
+}
+
+.InputContainer{
+    display: flex;
+flex-direction: column;
+margin-bottom: 5px;
+
+}
+label{
+    font-size: medium;
+}
+input,textarea{
+    padding: 16px;
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    border-radius: 16px;
+    background-color: #ddd;
+
+}
+form{
+    margin: 100px 0px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+form h1{
+    font-size:x-small;
+}
+form h5{
+    color: orangered;
+    text-align: center;
+}
+input[type="submit"]{
+    background-color: #113;
+    color: white;
+    font-size: 24px;
+    width: 200px;
+    margin-top: 32px;
+    padding: 10px;
+    border-radius: 20px;
+}
+input[type="submit"]:hover{
+    background-color: orangered;
+    transform: scale(1.15);
+}
+@media screen and (max-width:1110px){
+    .ContactContainer{ 
+        height: 650px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+    
+    }
+}
+
+/* @media screen and (max-width:810px){
+    .ContactContainer{ 
+        height: 650px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .FormContainer{
+    width: 100%;
+    padding: 50px;
+    
+    }
+} */
