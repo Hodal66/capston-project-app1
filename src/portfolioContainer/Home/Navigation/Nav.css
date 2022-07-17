@@ -1,0 +1,104 @@
+.mainContainer{
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    align-content: center;
+    margin-top: 2em;
+    justify-content:space-evenly;
+}
+.mylogoMHT{
+    color: orangered;
+}
+.mylogoHodol{
+    color: #fff;
+}
+.menuList ul{
+    font-size:x-large;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    list-style: none;
+   margin-left: 2em;
+}
+.menuList ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+ul li a:hover{
+    color: orangered;
+    border: 2px solid orangered;
+    padding: 0.2em;
+    border-radius: 0.5em;
+}
+h1{
+    color: #fff;
+}
+.Home{
+    color: orangered;
+   
+}
+@media screen and (max-width: 1024px){
+    .mainContainer{
+       
+        font-size: 0.5em;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        margin-top: 2em;
+        justify-content:space-around;
+    }
+
+  
+    .menuList ul{
+        font-size:large;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        list-style: none;
+       margin-left: 2em;
+    }
+    .navBtn{
+        padding: 0.5em;
+        width: 100%;
+    }
+
+    ul li a:hover{
+        padding: 0.2em;
+        border-radius: 0.5em;
+    }
+}
+    
+@media screen and (max-width: 800px){
+    .mainContainer{
+       background-color: aqua;
+        font-size: 0.5em;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        margin: 3em 3em;
+        justify-content:space-around;
+    }
+
+  
+    .menuList ul{
+        background-color: cyan;
+        font-size:medium;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        list-style: none;
+       margin-left: 2em;
+    }
+    .navBtn{
+        padding: 0.1em;
+        width: 110%;
+    }
+
+    ul li a:hover{
+        padding: 0.2em;
+        border-radius: 0.5em;
+    }
+}
+  

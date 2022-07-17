@@ -1,15 +1,18 @@
 .profile-container{
     display:flex;
     align-items:center;
-    justify-content:center;
-    height:10%;
+    justify-content:space-around;
+    height:10wh;
+    padding:6em;
     min-height: fit-content;
     /* background-image: url("../../Assets/Home/bg.jpg"); */
 }
 .profile-parent{
     display:flex;
-    align-items:center;
     color:aliceblue;
+    justify-content: baseline;
+    /* background-color: red; */
+    flex-direction: row;
 
 }
 .profile-details-name{
@@ -19,7 +22,7 @@
 .profile-details-role{
     display:flex;
     flex-direction: column;
-    margin:14px 0 24px 0;
+    margin:6em;
 }
 .profile-details-role h1{
     font-size:40px;
@@ -36,6 +39,9 @@
     margin:5px 0 0 0;
     font-family:"Poppins Light";
 }
+.profile-options{
+    margin: 1em 6em;
+}
 .profile-options .highlighted-btn{
     margin:0 0 0 28px;
     color:cornsilk;
@@ -46,18 +52,17 @@
    color:#111;
 }
 .profile-picture{
+    background-color: orangered;
     display:flex;
-    align-items:center;
-    justify-content:center;
     box-shadow: 0 1px 0px 0px var(--white);
-    height:380px;
+    height:52vh;
     border-radius:50%;
-    width:380px;
+    width:25.2vw;
     margin:0 0px 0 100px
 }
 .profile-picture-background{
-    height:92%;
-    width:92%;
+    height:50vh;
+    width:25vw;
     background-image: url('../../../Assets/Home/potifolioprofile.jpg');
     background-size:cover;
     border-radius:50%;
@@ -68,80 +73,204 @@
     transform:scale(1.07);
     transition: 1s ease-out;
 }
-.colz .colz-icon i{
-    color:white;
-    padding:8px;
-    margin-left:4px;
-    padding-left:0px;
+.colz {
+  color: #fff;
+  font-size: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1em;
 
 }
-.colz .colz-icon i:hover{
-    transform:scale(1.5)
+.primary-text{
+    font-size: 1.5em;
 }
+.profile-options{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+}
+
+
 /*
+Media Querry for Home Page 1200px
+Media Querry for Home Page 1200px
 Media Querry for Home Page*/
 
-@media screen and (max-width: 1110px){
-    .profile-picture{
-        margin:0 0px 2 80px;
-    }
-    .profile-details-name{
-        font-size:20px;
-    }
-    .profile-details-role .primary-text{
-        font-size: 12px;
-    }
-    .profile-options .btn{
-        width:120px;
-        padding:11px 0;
-        z-index:700;
-    }
-}
-@media screen and (max-width: 1110px){
-    .profile-picture{
-        height:320px;
-        width:320px;
-        margin:0 0 0 4px;
-    }
-}
-@media screen and (max-width: 810px){
-    .profile-picture{
-        margin:0 !important;
+@media screen and (max-width: 1024px){
+    .profile-container{
+        height:10%;
+        padding: 0em 6em;
+        min-height: fit-content;
+        /* background-image: url("../../Assets/Home/bg.jpg"); */
     }
     .profile-parent{
-        flex-direction:column-reverse;
-        margin:40px 0 0 0;
+        display:flex;
+        align-items:center;
+       
+    
+    }
+    .profile-details-name{
+        font-size:24px;
+        
+    }
+    .profile-details-role{
+        display:flex;
+        flex-direction: column;
+        margin:14px 0 24px 0;
+    }
+    .profile-details-role h1{
+        font-size:40px;
+        font-family:cursive;
+    }
+
+    .profile-role-tagline{
+        font-size:24px;
+        margin:5px 0 0 0;
+        
+    }
+    .profile-options .highlighted-btn{
+        margin:0 0 0 28px;
+      
+    }
+    .profile-options .highlighted-btn:hover{
+        margin:0 0 0 28px;
+       background-color:cornsilk;
+       color:#111;
+    }
+    .profile-picture{
+        height:380px;
+        border-radius:50%;
+        width:380px;
+        margin:0 0px 0 100px
+    }
+    .profile-picture-background{
+        height:80vh;
+        width:80vw;
+   
+    }
+    .profile-picture-background:hover{
+        transform:scale(1.1);
+        transition: 1s ease-out;
+    }
+    .colz {
+     
+      font-size: 0.8em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-b;
+      gap: 1em;
+
+
+    }
+    .colz-icon{
+        display: flex;
+        font-size: small;
+        gap: 1em;
+    }
+    /*
+    Media Querry for Home Page*/
+    
+}
+/*
+Media Querry for Home Page 800px
+Media Querry for Home Page 800px
+Media Querry for Home Page*/
+
+@media screen and (max-width: 800px){
+    .profile-container{
+        height:100vh;
+        width: 100vw;
+        padding: 0em 6em;
+        min-height: fit-content;
+        /* background-image: url("../../Assets/Home/bg.jpg"); */
+    }
+    .profile-parent{
+        display:flex;
+        flex-direction: row; 
+        justify-content: space-around;      
+    
+    }
+    .profile-details-name{
+        font-size:24px;
+    
+        
+    }
+    .profile-details-role{
+        /* background-color: red; */
+        display:flex;
+        flex-direction: column;
+        margin:2em 4em ;
+        font-size: .4em;
+    }
+    .profile-details-role .primary-text h1, span{
+      font-size: 1.8em;
+      
+    }
+    .btn{
+        padding: 1em;
+    }
+    .profile-details-role h1{
+        font-size:40px;
+        font-family:cursive;
+    }
+
+    .profile-role-tagline{
+        font-size:1.5em;
+        margin:5px 0 0 0;
+        
     }
     .profile-options{
-        display:flex;
-        justify-content:space-between;
+        /* background-color: rgb(182, 198, 5); */
 
+        display: flex;
+        flex-direction: row;
+        margin-top: 2em;
     }
     .profile-options .highlighted-btn{
-        margin:0 !important;
-
+        margin:0 0 0 28px;
+      
     }
-    .profile-details{
-        margin: 25px 0 0;
+    .profile-options .highlighted-btn:hover{
+        margin:0 0 0 28px;
+       background-color:cornsilk;
+       color:#111;
     }
-    .profile-options .highlighted-btn{
-        margin:0 !important;
-    }
-    .profile-options,
-    .profile-details-role{
-        text-align:center;
-    }
-}
-
-@media screen and (max-width: 375px){
     .profile-picture{
-        height:275px;
-        width:275;
-        margin-top: -90px;
+        /* background-color: rgb(7, 252, 35); */
+
+        height:52vh;
+        border-radius:50%;
+        width:30vw;
+        margin:0 0px 0 100px
+    }
+    .profile-picture-background{
+        height:50vh;
+        width:30vw;
+        border-radius:50%;
+   
+    }
+    .profile-picture-background:hover{
+        transform:scale(1.1);
+        transition: 1s ease-out;
+    }
+    .colz {
+     
+      font-size: 0.8em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-b;
+      gap: 0.5em;
+
 
     }
-    .profile-details{
-        width:90px;
+    .colz-icon{
+        display: flex;
+        font-size: 12px;
+        gap: 0.2em;
 
     }
+    /*
+    Media Querry for Home Page*/
+    
 }

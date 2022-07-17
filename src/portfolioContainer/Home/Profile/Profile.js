@@ -1,5 +1,12 @@
 import React from "react";
 import Typical from "react-typical";
+import { BsFacebook } from "react-icons/bs";
+import {
+  AiFillTwitterCircle,
+  AiFillLinkedin,
+  AiFillInstagram,
+} from "react-icons/ai";
+
 import "./Profile.css";
 function Profile() {
   return (
@@ -8,18 +15,21 @@ function Profile() {
         <div className="profile-details">
           <div className="colz">
             <div className="colz-icon">
-              <a href="https://www.facebook.com/profile.php?id=100008621834637&sk=archive">
-                <i className=" fa fa-facebook-square"></i>
+              <a
+                href="https://www.facebook.com/profile.php?id=100008621834637&sk=archive"
+                title="facebook"
+              >
+                <BsFacebook className="icons" />
               </a>
               <a href="https://www.youtube.com/channel/UCLpUS5vXGIujnI7pp59ksxw/featured">
-                <i className="fa fa-youtube-square"></i>
+                <AiFillTwitterCircle className="icons" />
               </a>
               <a href="https://www.youtube.com/channel/UCLpUS5vXGIujnI7pp59ksxw/featured">
-                <i className=" fa fa-instagram"></i>
+                <AiFillLinkedin className="icons" />
               </a>
 
               <a href="#tt">
-                <i className=" fa fa-twitter"></i>
+                <AiFillInstagram className="icons" />
               </a>
             </div>
             <div className="profile-details">
